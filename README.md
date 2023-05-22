@@ -5,6 +5,7 @@ This application is a profile searcher for (Github) profiles.
 ## Technologies Used
 
 The application was built using the following technologies:
+
 - [Next.js](https://nextjs.org)
 - [React](https://reactjs.org)
 - [Tailwind CSS](https://tailwindcss.com)
@@ -18,24 +19,31 @@ The website is deployed using [Vercel](https://vercel.com/). You can visit the d
 To run the application locally, follow these steps:
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/walefy/search-github-user
 ```
 
 2. Install the dependencies:
+
 ```bash
 npm install
 ```
+
 or
+
 ```bash
 yarn install
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 ```
+
 or
+
 ```bash
 yarn dev
 ```
