@@ -1,5 +1,6 @@
 {
-  "name": "watodo",
+  "name": "github_search",
+  "author": "Walefy D. Gonçalves",
   "version": "0.1.0",
   "private": true,
   "scripts": {
