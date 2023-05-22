@@ -9,18 +9,12 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0px 10px;
-  /* background-color: black; */
 }
-
-/* ul {
-  list-style: disc;
-} */
 
 .divContainer {
   display: flex;
   flex-direction: column;
   min-width: 50%;
-  /* background-color: red; */
   justify-content: center;
   align-items: center;
   gap: 10px;
