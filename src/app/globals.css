@@ -2,26 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0px 10px;
+  /* background-color: black; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* ul {
+  list-style: disc;
+} */
+
+.divContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0px;
+  overflow: hidden;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .infoContainer {
+    flex-direction: column;
+  }
+
+  .divContainer {
+    width: 90%;
+    margin: 5px 0px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media screen and (max-width: 360px) {
+  .divContainer {
+    width: 100%;
+  }
 }
