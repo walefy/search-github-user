@@ -48,11 +48,9 @@ export default function Home() {
         <div>
           <h2 className="text-xl md:text-1xl text-center text-gray-900 mb-2">Informações</h2>
           <Card>
-              <>
-                <p>Nome: {userInfo.login}</p>
-                <p>Repositórios públicos: {userInfo.public_repos}</p>
-                <p>Seguidores: {userInfo.followers}</p>
-              </>
+              <p>Nome: {userInfo.login}</p>
+              <p>Repositórios públicos: {userInfo.public_repos}</p>
+              <p>Seguidores: {userInfo.followers}</p>
           </Card>
         </div>
         <div>
@@ -60,9 +58,9 @@ export default function Home() {
           <Card>
             <div className="overflow-auto h-48 hidden-scrollbar">
               <ul>
-                {repository.map((repoName) => (
+                {repository.length ? repository.map((repoName) => (
                   <li className="shadow-md p-2 bg-gray-100 rounded-md mb-1 text-gray-600" key={repoName}>{repoName}</li>
-                ))}
+                )) : <li>Vazio</li>}
               </ul>
             </div>
           </Card>
