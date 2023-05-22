@@ -46,6 +46,16 @@ export default function Home() {
       <Avatar url={userInfo.avatar_url} />
       <div className="infoContainer">
         <div>
+          <h2 className="text-xl md:text-1xl text-center text-gray-900 mb-2">Informações</h2>
+          <Card>
+              <>
+                <p>Nome: {userInfo.login}</p>
+                <p>Repositórios públicos: {userInfo.public_repos}</p>
+                <p>Seguidores: {userInfo.followers}</p>
+              </>
+          </Card>
+        </div>
+        <div>
           <h2 className="text-xl md:text-1xl text-center text-gray-900 mb-2">Repositórios</h2>
           <Card>
             <div className="overflow-auto h-48 hidden-scrollbar">
@@ -55,16 +65,6 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-          </Card>
-        </div>
-        <div>
-          <h2 className="text-xl md:text-1xl text-center text-gray-900 mb-2">Informações</h2>
-          <Card>
-              <>
-                <p>Nome: {userInfo.login}</p>
-                <p>Repositórios públicos: {userInfo.public_repos}</p>
-                <p>Seguidores: {userInfo.followers}</p>
-              </>
           </Card>
         </div>
       </div>
