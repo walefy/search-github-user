@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Github Profile Search
+
+This application is a profile searcher for (Github) profiles.
+
+## Technologies Used
+
+The application was built using the following technologies:
+- [Next.js](https://nextjs.org)
+- [React](https://reactjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+
+## Deployment
+
+The website is deployed using [Vercel](https://vercel.com/). You can visit the deployed site [here](https://search-github-user-three.vercel.app).
 
 ## Getting Started
 
-First, run the development server:
+To run the application locally, follow these steps:
 
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/walefy/search-github-user
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install the dependencies:
+```bash
+npm install
+```
+or
+```bash
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
+or
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Open your browser and visit `http://localhost:3000` to access the application.
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+> ℹ️ This feature will be available soon!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Enter the username of the Github profile you want to search for, and click the "Search" button. The application will retrieve and display the profile information.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Contributions are welcome! If you find any issues or want to add new features, feel free to open a pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the [MIT License](LICENSE).
